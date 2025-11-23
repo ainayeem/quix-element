@@ -1,0 +1,78 @@
+name: Timelinecng
+slug: timeline
+groups: general
+helpId: 5dfsfsldfjileknlsfnlsfjsf
+
+form:
+  general:
+    - name: timeline_fields_group
+      label: Timeline
+      type: group-repeater
+      schema:
+        - name: title
+          label: Title
+          type: text
+          value: Timeline Title
+
+        - name: date
+          label: Date
+          type: text
+          value: 19 November, 2025
+
+        - name: description
+          label: Description
+          type: editor
+          value: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        - name: icon
+          type: media
+          filters: icon
+          showstyle: true
+
+    - name: layout_settings_fields_group
+      label: Layout Settings
+      type: fields-group
+      status: open
+      schema:
+        - name: layout
+          label: Layout Type
+          type: select
+          value: vertical
+          options:
+            vertical: Vertical
+            horizontal: Horizontal
+
+        - name: show_connector
+          label: Show Timeline Connector
+          type: switch
+          value: true
+
+        - name: show_pointers
+          label: Show Timeline Pointer
+          type: switch
+          value: true
+
+        - name: connector_style
+          label: Connector Style
+          type: select
+          value: solid
+          depends:
+            show_connector: true
+          options:
+            solid: Solid
+            dashed: Dashed
+            dotted: Dotted
+
+  styles:
+    - name: connector_color
+      label: Connector Color
+      type: color
+      value: "e5e5e5"
+
+    - name: connector_width
+      label: Connector Width
+      type: slider
+      min: 1
+      max: 10
+      suffix: px
+      value: 2
