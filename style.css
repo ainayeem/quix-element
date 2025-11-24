@@ -10,6 +10,8 @@
   background: #dbeafe;
   border-radius: 9999px;
   box-shadow: 0 0 0 8px #ffffff;
+  color: #1d4ed8;
+  padding: 2px;
 }
 
 .qx-timeline-icon-svg {
@@ -73,11 +75,21 @@
   margin: 0.5rem 0;
 }
 
+.qx-timeline-vertical .timeline.qx-timeline-connector.qx-timeline-dashed {
+  border-left-style: dashed;
+}
+.qx-timeline-vertical .timeline.qx-timeline-connector.qx-timeline-dotted {
+  border-left-style: dotted;
+}
+
 /* Horizontal Layout */
 
 .qx-timeline-horizontal .timeline {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  /* for mobile view there will be one item for tab 3 items */
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  justify-items: stretch;
+
   align-items: flex-start;
   position: relative;
   padding: 2px 0;
@@ -91,10 +103,12 @@
 }
 
 .qx-timeline-horizontal .qx-timeline-item {
-  flex: 1;
+  /* flex: 1; */
   position: relative;
   margin: 0;
   padding: 0;
+  width: fit-content;
+  /* border-top: 2px solid green; */
 }
 
 .qx-timeline-horizontal .qx-timeline-icon {
@@ -104,4 +118,11 @@
 
 .qx-timeline-horizontal .qx-timeline-title {
   margin: 2rem 0;
+}
+
+.qx-timeline-horizontal .timeline.qx-timeline-connector.qx-timeline-dashed {
+  border-top-style: dashed;
+}
+.qx-timeline-horizontal .timeline.qx-timeline-connector.qx-timeline-dotted {
+  border-top-style: dotted;
 }

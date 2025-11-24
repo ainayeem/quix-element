@@ -47,11 +47,6 @@ form:
           type: switch
           value: true
 
-        - name: show_pointers
-          label: Show Timeline Pointer
-          type: switch
-          value: true
-
         - name: connector_style
           label: Connector Style
           type: select
@@ -62,6 +57,11 @@ form:
             solid: Solid
             dashed: Dashed
             dotted: Dotted
+
+        - name: show_pointers
+          label: Show Timeline Pointer
+          type: switch
+          value: true
 
   styles:
     - name: connector_color
