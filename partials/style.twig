@@ -5,9 +5,9 @@
 {{ style.css(id ~ ' .timeline-wrapper', 'padding', '32px') }}
 
 
-
-{# Text Color #}
+{# connector color and width #}
 {{ style.css( id ~ ' .timeline.qx-timeline-connector', 'border-color', styles.connector_color) }}
+{{ style.css( id ~ ' .timeline.qx-timeline-connector', 'border-width', styles.connector_width ~ 'px') }}
 
 {# Load advanced styles #}
 {{ style.load(advanced.identifier.id) }}

@@ -11,12 +11,12 @@
   border-radius: 9999px;
   box-shadow: 0 0 0 8px #ffffff;
   color: #1d4ed8;
-  padding: 2px;
+  padding: 5px;
 }
 
 .qx-timeline-icon-svg {
-  width: 0.75rem;
-  height: 0.75rem;
+  /* width: 0.75rem;
+  height: 0.75rem; */
   color: #1d4ed8;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .qx-timeline-vertical .qx-timeline-icon {
-  top: 0;
+  top: -1.5px;
   left: -2.3rem;
 }
 
