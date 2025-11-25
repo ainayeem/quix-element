@@ -47,6 +47,10 @@
   text-align: justify;
 }
 
+.qx-timeline-image img {
+  margin-top: 16px;
+}
+
 /* Vertical Layout */
 
 .qx-timeline-vertical .timeline {
@@ -117,7 +121,7 @@
 }
 
 .qx-timeline-horizontal .qx-timeline-title {
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 
 .qx-timeline-horizontal .timeline.qx-timeline-connector.qx-timeline-dashed {

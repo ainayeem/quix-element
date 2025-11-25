@@ -24,6 +24,12 @@ form:
           type: editor
           value: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
 
+        - name: image
+          label: Image
+          type: media
+          filters: image
+          showstyle: true
+
         - name: icon
           type: media
           filters: icon
