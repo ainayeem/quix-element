@@ -65,42 +65,43 @@
 							}}
 						</h2>
 
-						{# Date #}
-						{% if item.date %}
-							<time class="qx-timeline-date">
+						<div class="qx-timeline-content">
+							{# Date #}
+							{% if item.date %}
+								<time class="qx-timeline-date">
+									{{
+										(
+											"<span " ~
+											inlineEditor("general.timeline_fields_group.date", loop.index0) ~
+											">" ~
+											item.date ~
+											"</span>"
+										) | raw
+										}}
+								</time>
+							{% endif %}
+
+							{# Description #}
+							<div class="qx-timeline-description">
 								{{
 									(
-										"<span " ~
-										inlineEditor("general.timeline_fields_group.date", loop.index0) ~
-										">" ~
-										item.date ~
-										"</span>"
+									"<div " ~
+									inlineEditor("general.timeline_fields_group.description", loop.index0) ~
+									">" ~
+									item.description ~
+									"</div>"
 									) | raw
-									}}
-							</time>
-						{% endif %}
-
-						{# Description #}
-						<div class="qx-timeline-description">
-							{{
-								(
-								"<div " ~
-								inlineEditor("general.timeline_fields_group.description", loop.index0) ~
-								">" ~
-								item.description ~
-								"</div>"
-								) | raw
-							}}
-						</div>
-
-
-						{# Image #}
-						{% if item.image.source %}
-							<div class="qx-timeline-image">
-
-								{{ image(item.image.source, item.image.alt, '', '', item.image) | link(item.image) }}
+								}}
 							</div>
-						{% endif %}
+
+							{# Image #}
+							{% if item.image.source %}
+								<div class="qx-timeline-image">
+
+									{{ image(item.image.source, item.image.alt, '', '', item.image) | link(item.image) }}
+								</div>
+							{% endif %}
+						</div>
 
 					</div>
 				{% endfor %}

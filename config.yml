@@ -1,4 +1,4 @@
-name: Timelinecng
+name: Timeline
 slug: timeline
 groups: general
 helpId: 5dfsfsldfjileknlsfnlsfjsf
@@ -70,15 +70,20 @@ form:
           value: true
 
   styles:
-    - name: connector_color
-      label: Connector Color
-      type: color
+    - name: connector_styles_fields_group
+      label: Connector Styles
+      type: fields-group
+      status: open
+      schema:
+        - name: connector_color
+          label: Color
+          type: color
 
-    - name: connector_width
-      label: Connector Width
-      responsive: false
-      type: slider
-      min: 1
-      max: 10
-      suffix: px
-      value: 2
+        - name: connector_width
+          label: Width
+          responsive: false
+          type: slider
+          min: 1
+          max: 10
+          suffix: px
+          value: 2
