@@ -6,8 +6,16 @@
 
 
 {# connector color and width #}
-{{ style.css( id ~ ' .timeline.qx-timeline-connector', 'border-color', styles.connector_color) }}
-{{ style.css( id ~ ' .timeline.qx-timeline-connector', 'border-width', styles.connector_width ~ 'px') }}
+{{ style.css( id ~ ' .timeline.qx-timeline-connector', 'border-color', styles.connector_styles_fields_group.connector_color) }}
+{{ style.css( id ~ ' .qx-timeline-icon', 'color', styles.connector_styles_fields_group.connector_color) }}
+{# {{ style.css( id ~ ' .qx-timeline-icon', 'background', styles.connector_styles_fields_group.connector_color) }} #}
+{{ style.css(
+    id ~ ' .qx-timeline-icon',
+    'background',
+    'color-mix(in srgb, ' ~ styles.connector_styles_fields_group.connector_color ~ ' 20%, white)'
+) }}
+
+{{ style.css( id ~ ' .timeline.qx-timeline-connector', 'border-width', styles.connector_styles_fields_group.connector_width ~ 'px') }}
 
 {# Load advanced styles #}
 {{ style.load(advanced.identifier.id) }}

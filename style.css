@@ -11,7 +11,7 @@
   border-radius: 9999px;
   box-shadow: 0 0 0 8px #ffffff;
   color: #1d4ed8;
-  padding: 5px;
+  padding: 15px;
 }
 
 .qx-timeline-icon-svg {
@@ -71,8 +71,8 @@
 }
 
 .qx-timeline-vertical .qx-timeline-icon {
-  top: -1.5px;
-  left: -2.3rem;
+  top: -2px;
+  left: -41px;
 }
 
 .qx-timeline-vertical .qx-timeline-title {
@@ -116,8 +116,8 @@
 }
 
 .qx-timeline-horizontal .qx-timeline-icon {
-  top: -0.9rem;
-  left: -0.3rem;
+  top: -18px;
+  /* left: -0.3rem; */
 }
 
 .qx-timeline-horizontal .qx-timeline-title {

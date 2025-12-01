@@ -71,7 +71,7 @@ form:
 
   styles:
     - name: connector_styles_fields_group
-      label: Connector Styles
+      label: Styles
       type: fields-group
       status: open
       schema:
@@ -80,10 +80,10 @@ form:
           type: color
 
         - name: connector_width
-          label: Width
+          label: Connector Width
           responsive: false
           type: slider
           min: 1
-          max: 10
+          max: 5
           suffix: px
           value: 2
