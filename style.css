@@ -1,5 +1,10 @@
 /* Base Styles */
 
+.timeline-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .qx-timeline-icon {
   position: absolute;
   display: flex;
